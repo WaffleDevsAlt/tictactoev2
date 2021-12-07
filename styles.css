@@ -39,7 +39,7 @@ html {
   background-color: black;
 }
 .ttbutton2 {
-  font-size: calc(100vw/7);
+  font-size: min(calc(100vw/6), 200px);
 }
 #result {
   font-family: 'Times', serif;
