@@ -13,11 +13,8 @@ var winsets = [
 ]
 
 $(".ttbutton").click(function() {
-  if (this.id.includes("a")) {
-    return;
-  }
+  if (this.id.includes("a")){return;}
   if ($(`#${this.id}a`).html() == "‏‏‎ ‎" && win == " ") {
-    console.log("a")
     $(`#${this.id}a`).html(turn)
     turnSet()
   }
@@ -32,7 +29,7 @@ $("#reset").click(function() {
   turn = "X"
   win = " "
   $("#result").html("It's " + turn + "'s Turn!")
-  $("#result").css("left", "45%");
+  $("#result").css("left", "calc(50vw - 60px)");
 })
 
 function winLogic() {
